@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: white;
+}
+.bookName{
+    font-family: 'Ubuntu', sans-serif;
+    color: orangered;
+    text-align: left;
+    text-size-adjust:100px ;
+}
+.features{
+    display: inline-block;
+    border: 2px solid orangered;
+    background-color: aqua;
+    border-top-right-radius: 500%;
+    display: block;
+    float: left ;
+}
+.publisher{
+    float: right;
+}
+.author{
+    float: left;
+    display: block;
+}
