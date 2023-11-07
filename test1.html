@@ -1,0 +1,57 @@
+<!-- Create a div(50X50px) and two buttons right move and left move respectively. By clicking the right move the div will move towards the right side 250px, the width and height of the div will be increased by 50px in each move and an alert will be shown.Again by clicking the left move button the div will move to its initial position with an alert. Add proper css to the div. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50px;
+            width: 50px;
+            position: relative;
+            display: flex;
+            background-color: cadetblue;
+        }
+        .content{
+            margin-left: 0;
+            padding-left: 0;
+            margin-right: 250px;
+            padding-right: 250px;
+            border: 1px solid black;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#lBtn").click(function(){
+                $(".container").animate({
+                    left:"+=50px"
+                },function(){
+                    alert("Moved to left")
+                })
+            })
+            $("#rBtn").click(function(){
+                $(".container").animate({
+                    left:"-=50px"
+                },function(){
+                    alert("Moved To right")
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="btnDiv">
+        <button id="lBtn">move left</button>
+        <button id="rBtn">move right</button>
+    </div>
+    <div class="content">
+        <div class="container">
+            Hello World
+        </div>
+    </div>
+    
+</body>
+</html>
