@@ -1,0 +1,66 @@
+body{
+    background-image: url(download.jpg);
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+}
+.content{
+    height: auto;
+    width: auto;
+    display: block;
+    background-color: rgba(10, 53, 146, 0.66);
+    border-radius: 10px;
+    color: beige;
+    padding: 10px;
+}
+.formElements:hover{
+    background-color: rgba(233, 208, 208) transparent;
+    color: beige;
+    opacity: 1;
+}
+.formElements{
+    margin: 10px;
+    width: 90%;
+}
+.formContent{
+    margin: 5px;
+    width: 90%;
+}
+button{
+    align-self: center;
+}
+::placeholder{
+    color: rgb(213, 213, 213)0, 0, 0, 0.276)
+}
+.registerBtn{
+    display: block;
+    background-color: #04AA6D;
+    color: beige;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerBtn:hover{
+    opacity: 1;
+}
+.resetBtn{
+    display: block;
+    background-color: #aa0404;
+    color: beige;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.resetBtn:hover{
+    opacity: 1;
+}
